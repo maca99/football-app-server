@@ -29,6 +29,7 @@ public class Championship implements java.io.Serializable{
 	@OneToMany
 	private List<Daymatch> daymatches;
 	
+
 	public Championship() {}
 	
 	public Year getYear() {

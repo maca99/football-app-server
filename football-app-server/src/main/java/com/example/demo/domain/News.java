@@ -1,15 +1,20 @@
 package com.example.demo.domain;
 
 
+import java.util.Date;
+
 import org.hibernate.annotations.Tables;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 
 @Entity
-public class News{
+public class News implements Comparable<News>{
 	
 	
     private @Id @GeneratedValue long id;
@@ -18,8 +23,17 @@ public class News{
 	private String titolo;
 	
 	private String testo;
-
 	
+	 @Temporal(TemporalType.DATE)
+	private Date date;
+
+	 @PrePersist
+	 public void prePersist() {
+	  	date = new Date();
+	 }
+
+
+
 	public News() {}
 	
 	
@@ -43,7 +57,18 @@ public class News{
 		this.testo = testo;
 	}
 
-	
+		public Date getDate() {
+		return date;
+	}
+		
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	@Override
+	public int compareTo(News other) {
+		return this.date.compareTo(other.date);
+	}
 	
 	
 }

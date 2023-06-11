@@ -3,13 +3,10 @@ package com.example.demo.domain;
 import java.util.List;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -24,7 +21,7 @@ public class Daymatch {
 	@Column(name="id_daymatch")
 	private Long id;
 	
-	@ElementCollection
+	@OneToMany
 	private List<Match>matchs;
 	
 	public List<Match> getMatchs() {
