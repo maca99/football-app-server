@@ -18,6 +18,12 @@ public class Competition implements java.io.Serializable{
 	
 	private String name;
 	
+	private String details;
+	
+	private String logo;
+	
+	private Team lastWinner;
+	
 	public Competition() {}
 		
 	public Long getId() {
@@ -35,5 +41,29 @@ public class Competition implements java.io.Serializable{
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getLogo() {
+		return logo;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+	public Team getLastWinner() {
+		return lastWinner;
+	}
+
+	public void setLastWinner(Team lastWinner) {
+		this.lastWinner = lastWinner;
 	}
 }

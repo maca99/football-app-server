@@ -1,6 +1,5 @@
 package com.example.demo.domain;
 
-import java.time.Year;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -21,7 +20,7 @@ public class Championship implements java.io.Serializable{
 	@Column(name="id_championship")
 	private Long id;
 	
-	private Year year; 
+	private String year; 
 	
 	@ManyToOne
 	private Competition competition;
@@ -32,10 +31,10 @@ public class Championship implements java.io.Serializable{
 
 	public Championship() {}
 	
-	public Year getYear() {
+	public String getYear() {
 		return year;
 	}
-	public void setYear(Year year) {
+	public void setYear(String year) {
 		this.year = year;
 	}
 	public Competition getCompetition() {

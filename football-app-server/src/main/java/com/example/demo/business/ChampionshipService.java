@@ -17,6 +17,11 @@ public class ChampionshipService {
 	public Championship findById(Long id) {
 		return repository.findById(id).orElseThrow();
 	}
-	
+	public Championship addChampionship(Championship champ) {
+		return repository.save(champ);	
+	}
+	public void removeChampionship(Long id) {
+		repository.deleteById(id);;
+	}
 
 }

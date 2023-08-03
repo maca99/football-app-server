@@ -22,6 +22,7 @@ public class News implements Comparable<News>{
 	
 	private String testo;
 	
+	
 	 @Temporal(TemporalType.DATE)
 	private Date date;
 

@@ -14,23 +14,20 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.business.NewsService;
 import com.example.demo.domain.News;
 
-@CrossOrigin(origins = "http://localhost:8100")
 @RestController
 public class NewsController {
-	
 	private final NewsService service;
 	
 	NewsController(NewsService service){
 		this.service=service;
 	}
-	
+	@CrossOrigin(origins = "http://localhost:8100")
 	@GetMapping("/news")
 	List<News> getAllNews() {
 		List<News>news = new ArrayList<News>(service.findAll());
 		Collections.sort(news);
 		return news;
 	}
-	
 	@GetMapping("/news/{id}")
 	News findNews(@PathVariable Long id) {
 		return service.findById(id);
