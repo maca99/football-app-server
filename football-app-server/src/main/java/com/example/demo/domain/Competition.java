@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,6 +23,10 @@ public class Competition implements java.io.Serializable{
 	
 	private String logo;
 	
+	@OneToOne
+	private Country country;
+	
+	@OneToOne
 	private Team lastWinner;
 	
 	public Competition() {}
@@ -32,6 +37,14 @@ public class Competition implements java.io.Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}	
+	
+	public Country getCountry() {
+		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
 	}
 
 	

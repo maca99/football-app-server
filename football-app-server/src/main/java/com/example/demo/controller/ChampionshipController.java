@@ -26,6 +26,7 @@ public class ChampionshipController {
 		return service.findById(id);
 	}
 	
+	
 	@PostMapping("/add-championship")
 	Championship addChampionship(@RequestBody Championship champ) {
 		return service.addChampionship(champ);
