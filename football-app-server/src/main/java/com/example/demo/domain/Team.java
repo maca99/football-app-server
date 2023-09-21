@@ -1,35 +1,19 @@
 package com.example.demo.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
-@Entity
-@Table(name="team")
-public class Team implements java.io.Serializable{
+public class Team {
 
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id_team")
-	private long  id;
-	
 	private String name;
 	private String coach;
+	private Competition competition;
 	
 	
-	public Team() {}
-	
-	public long getId() {
-		return id;
+	public Team(String name,String coach,Competition competition) {
+		this.setCoach(coach);
+		this.setCompetition(competition);
+		this.setName(name);
 	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 
 	
 	public String getCoach() {
@@ -47,6 +31,18 @@ public class Team implements java.io.Serializable{
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+
+	public Competition getCompetition() {
+		return competition;
+	}
+
+
+
+	public void setCompetition(Competition competition) {
+		this.competition = competition;
 	}
 
 }

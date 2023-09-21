@@ -1,48 +1,26 @@
 package com.example.demo.domain;
 
 
+import java.util.Calendar;
 import java.util.Date;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
-
-@Entity
 public class News implements Comparable<News>{
-	
-	
-    private @Id @GeneratedValue long id;
 	
 
 	private String titolo;
 	
 	private String testo;
 	
-	
-	 @Temporal(TemporalType.DATE)
 	private Date date;
 
-	 @PrePersist
-	 public void prePersist() {
-	  	date = new Date();
-	 }
 
-
-
-	public News() {}
-	
-	
-		public long getId() {
-		return id;
+	public News(String titolo,String testo) {
+		this.setTitolo(titolo);
+		this.setTesto(testo);
 	}
+	
 
-	public void setId(long id) {
-		this.id = id;
-	}
 	public String getTitolo() {
 		return titolo;
 	}
@@ -60,8 +38,10 @@ public class News implements Comparable<News>{
 		return date;
 	}
 		
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate() {
+        Calendar calendar = Calendar.getInstance();
+        // Ottieni la data corrente
+        this.date = calendar.getTime();
 	}
 
 	@Override

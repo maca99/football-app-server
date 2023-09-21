@@ -4,17 +4,16 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.demo.business.MatchService;
+import com.example.demo.business.MatchServiceImpl;
 import com.example.demo.domain.Match;
 
 @CrossOrigin(origins = "http://localhost:8100")
 @RestController
 public class MatchController {
 
-private final MatchService service;
+private final MatchServiceImpl service;
 	
-	MatchController(MatchService service){
+	MatchController(MatchServiceImpl service){
 		this.service=service;
 	}
 	
