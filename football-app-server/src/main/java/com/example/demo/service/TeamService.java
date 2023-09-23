@@ -1,5 +1,8 @@
 package com.example.demo.service;
 
-public interface TeamService {
+import com.example.demo.domain.Team;
 
+public interface TeamService {
+	
+ public Team findById(Long id);
 }

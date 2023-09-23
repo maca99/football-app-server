@@ -5,6 +5,8 @@ import java.util.List;
 public class Competition {
 	
 	
+	private Long id;
+	
 	private String name;
 	
 	private String details;
@@ -13,8 +15,10 @@ public class Competition {
 	
 	private List<Daymatch> daymatches;
 	
+	private List<Team> teams;
+	
 
-	public Competition(String name,String details,String logo) {
+	public Competition(Long id,String name,String details,String logo) {
 		this.setName(name);
 		this.setDetails(details);
 		this.setLogo(logo);
@@ -50,9 +54,29 @@ public class Competition {
 		return daymatches;
 	}
 
+	//Dato una lista la itero creando la serie delle giornate
+	public void setDaymatches() {
+		
+	}
 
-	public void setDaymatches(List<Daymatch> daymatches) {
-		this.daymatches = daymatches;
+
+	public List<Team> getTeams() {
+		return teams;
+	}
+
+
+	public void setTeams(List<Team> teams) {
+		this.teams = teams;
+	}
+
+
+	public Long getId() {
+		return id;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 

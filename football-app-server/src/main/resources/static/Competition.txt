@@ -1,0 +1,3 @@
+1,"Serie A","Il campionato di Serie A è la massima competizione italiana nel calcio maschile","https://i.pinimg.com/originals/55/39/54/5539546069e18c2ec04b9b661c38efb8.png"
+2,"Premier League","La massima lega in Inghilterra","https://static.vecteezy.com/system/resources/previews/010/994/451/non_2x/premier-league-logo-symbol-with-name-design-england-football-european-countries-football-teams-illustration-with-purple-background-free-vector.jpg"
+3,"La liga","spagna","https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/LaLiga_Santander_logo_%28stacked%29.svg/2394px-LaLiga_Santander_logo_%28stacked%29.svg.png"

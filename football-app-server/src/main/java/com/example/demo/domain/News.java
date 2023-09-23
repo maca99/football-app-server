@@ -15,9 +15,10 @@ public class News implements Comparable<News>{
 	private Date date;
 
 
-	public News(String titolo,String testo) {
+	public News(String titolo,String testo,Date date) {
 		this.setTitolo(titolo);
 		this.setTesto(testo);
+		this.date=date;
 	}
 	
 

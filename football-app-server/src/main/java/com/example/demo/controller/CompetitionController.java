@@ -3,6 +3,7 @@ package com.example.demo.controller;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,7 +34,8 @@ public class CompetitionController {
 	
 	@GetMapping("/competitions/")
 	List<Competition> getAllCompetition(){
-		return null;
+		List<Competition> all = new ArrayList<Competition>(service.getAllCompetition());
+		return all;
 	}
 	
 	

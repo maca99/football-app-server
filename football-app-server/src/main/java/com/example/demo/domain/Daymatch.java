@@ -7,7 +7,6 @@ public class Daymatch {
 	
 	public Daymatch() {}
 	
-
 	private Long id;
 	
 	private List<Match>matchs;

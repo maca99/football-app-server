@@ -1,0 +1,81 @@
+1,2022-05-01,2021,"Juventus","AC Venezia","2-1",2,1,1
+2,2022-05-01,2021,"Empoli FC","Torino FC","1-3",1,3,1
+3,2022-05-01,2021,"AC Milan","ACF Fiorentina","1-0",1,0,1
+4,2022-05-01,2021,"Udinese Calcio","Inter","1-2",1,2,1
+5,2022-05-01,2021,"AS Roma","Bologna FC","0-0",0,0,1
+6,2022-05-02,2021,"Atalanta","Salernitana Calcio 1919","1-1",1,1,1
+7,2022-05-05,2021,"Salernitana Calcio 1919","AC Venezia","2-1",2,1,1
+8,2022-05-06,2021,"Inter","Empoli FC","4-2",4,2,1
+9,2022-05-06,2021,"Genoa CFC","Juventus","2-1",2,1,1
+10,2022-05-07,2021,"Torino FC","SSC Napoli","0-1",0,1,1
+11,2022-05-07,2021,"Sassuolo Calcio","Udinese Calcio","1-1",1,1,1
+12,2022-05-07,2021,"Lazio Roma","Sampdoria","2-0",2,0,1
+13,2022-05-08,2021,"Spezia Calcio","Atalanta","1-3",1,3,1
+14,2022-05-08,2021,"AC Venezia","Bologna FC","4-3",4,3,1
+15,2022-05-08,2021,"Salernitana Calcio 1919","Cagliari Calcio","1-1",1,1,1
+16,2022-05-08,2021,"Hellas Verona","AC Milan","1-3",1,3,1
+17,2022-05-09,2021,"ACF Fiorentina","AS Roma","2-0",2,0,1
+18,2022-05-14,2021,"Empoli FC","Salernitana Calcio 1919","1-1",1,1,1
+19,2022-05-14,2021,"Udinese Calcio","Spezia Calcio","2-3",2,3,1
+20,2022-05-14,2021,"Hellas Verona","Torino FC","0-1",0,1,1
+21,2022-05-14,2021,"AS Roma","AC Venezia","1-1",1,1,1
+22,2022-05-15,2021,"Bologna FC","Sassuolo Calcio","1-3",1,3,1
+23,2022-05-15,2021,"SSC Napoli","Genoa CFC","3-0",3,0,1
+24,2022-05-15,2021,"AC Milan","Atalanta","2-0",2,0,1
+25,2022-05-15,2021,"Cagliari Calcio","Inter","1-3",1,3,1
+26,2022-05-16,2021,"Sampdoria","ACF Fiorentina","4-1",4,1,1
+27,2022-05-16,2021,"Juventus","Lazio Roma","2-2",2,2,1
+28,2022-05-20,2021,"Torino FC","AS Roma","0-3",0,3,1
+29,2022-05-21,2021,"Genoa CFC","Bologna FC","0-1",0,1,1
+30,2022-05-21,2021,"Atalanta","Empoli FC","0-1",0,1,1
+31,2022-05-21,2021,"ACF Fiorentina","Juventus","2-0",2,0,1
+32,2022-05-21,2021,"Lazio Roma","Hellas Verona","3-3",3,3,1
+33,2022-05-22,2021,"Spezia Calcio","SSC Napoli","0-3",0,3,1
+34,2022-05-22,2021,"Inter","Sampdoria","3-0",3,0,1
+35,2022-05-22,2021,"Sassuolo Calcio","AC Milan","0-3",0,3,1
+36,2022-05-22,2021,"Salernitana Calcio 1919","Udinese Calcio","0-4",0,4,1
+37,2022-05-22,2021,"AC Venezia","Cagliari Calcio","0-0",0,0,1
+37,2022-04-18,2021,"Salford City","Barrow","2-2",2,2,"4",4
+38,2022-04-18,2021,"Scunthorpe United","Stevenage Borough","1-1",1,1,"4",4
+39,2022-04-18,2021,"Sutton United","Newport County","1-0",1,0,"4",4
+40,2022-04-18,2021,"Swindon Town","Leyton Orient","1-2",1,2,"4",4
+41,2022-04-18,2021,"Tranmere Rovers","Exeter City","2-0",2,0,"4",4
+42,2022-04-22,2021,"Newport County","Colchester United","1-2",1,2,"4",4
+43,2022-04-23,2021,"Barrow","Sutton United","1-0",1,0,"4",4
+44,2022-04-23,2021,"Bradford City","Scunthorpe United","2-1",2,1,"4",4
+45,2022-04-23,2021,"Bristol Rovers","Forest Green Rovers","0-0",0,0,"4",4
+46,2022-04-23,2021,"Exeter City","Rochdale","2-0",2,0,"4",4
+47,2022-04-23,2021,"Harrogate Town A.F.C.","Carlisle United","3-0",3,0,"4",4
+48,2022-04-23,2021,"Hartlepool United","Swindon Town","0-3",0,3,"4",4
+49,2022-04-23,2021,"Leyton Orient","Northampton Town","2-4",2,4,"4",4
+50,2022-04-23,2021,"Mansfield Town","Crawley Town","2-0",2,0,"4",4
+51,2022-04-23,2021,"Oldham Athletic","Salford City","1-2",1,2,"4",4
+52,2022-04-23,2021,"Stevenage Borough","Tranmere Rovers","2-0",2,0,"4",4
+53,2022-04-23,2021,"Walsall","Port Vale","2-0",2,0,"4",4
+54,2022-04-26,2021,"Exeter City","Barrow","2-1",2,1,"4",4
+55,2022-04-26,2021,"Mansfield Town","Stevenage Borough","2-0",2,0,"4",4
+56,2022-04-26,2021,"Sutton United","Crawley Town","3-0",3,0,"4",4
+57,2022-04-26,2021,"Swindon Town","Forest Green Rovers","2-1",2,1,"4",4
+58,2022-04-30,2021,"Carlisle United","Stevenage Borough","2-1",2,1,"4",4
+59,2022-04-30,2021,"Colchester United","Walsall","2-2",2,2,"4",4
+60,2022-04-30,2021,"Crawley Town","Leyton Orient","0-2",0,2,"4",4
+61,2022-04-30,2021,"Forest Green Rovers","Harrogate Town A.F.C.","1-3",1,3,"4",4
+62,2022-04-30,2021,"Northampton Town","Exeter City","1-1",1,1,"4",4
+63,2022-04-30,2021,"Rochdale","Bristol Rovers","3-4",3,4,"4",4
+64,2022-04-30,2021,"Scunthorpe United","Hartlepool United","1-1",1,1,"4",4
+65,2022-04-30,2021,"Sutton United","Bradford City","1-4",1,4,"4",4
+66,2022-04-30,2021,"Swindon Town","Barrow","2-1",2,1,"4",4
+67,2022-04-30,2021,"Tranmere Rovers","Oldham Athletic","2-0",2,0,"4",4
+68,2022-05-02,2021,"Salford City","Mansfield Town","2-2",2,2,"4",4
+69,2022-05-02,2021,"Port Vale","Newport County","1-2",1,2,"4",4
+70,2022-05-07,2021,"Barrow","Northampton Town","1-3",1,3,"4",4
+71,2022-05-07,2021,"Bradford City","Carlisle United","2-0",2,0,"4",4
+72,2022-05-07,2021,"Bristol Rovers","Scunthorpe United","7-0",7,0,"4",4
+73,2022-05-07,2021,"Exeter City","Port Vale","0-1",0,1,"4",4
+74,2022-05-07,2021,"Harrogate Town A.F.C.","Sutton United","0-2",0,2,"4",4
+75,2022-05-07,2021,"Hartlepool United","Colchester United","0-2",0,2,"4",4
+76,2022-05-07,2021,"Leyton Orient","Tranmere Rovers","0-1",0,1,"4",4
+77,2022-05-07,2021,"Mansfield Town","Forest Green Rovers","2-2",2,2,"4",4
+78,2022-05-07,2021,"Newport County","Rochdale","0-2",0,2,"4",4
+79,2022-05-07,2021,"Oldham Athletic","Crawley Town","3-3",3,3,"4",4
+80,2022-05-07,2021,"Stevenage Borough","Salford City","4-2",4,2,"4",4

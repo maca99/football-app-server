@@ -10,9 +10,9 @@ public class Player {
 	private Team club;
 	private int shirt_number;
 	
-	public Player() {}
 	
-	public Player(String name, String surname, Team club, Team national_team, int shirt_number) {
+	public Player(Long id,String name, String surname, Team club, int shirt_number) {
+		this.id=id;
 		this.setName(name);
 		this.setSurname(surname);
 		this.club = club;

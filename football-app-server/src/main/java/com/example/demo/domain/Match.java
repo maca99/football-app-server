@@ -10,18 +10,19 @@ public class Match {
 
 	private Team home;
 	   
-
 	private Team visitor;
 	
-	private boolean terminata;
-	
 	private Date date_match;
+	
+	private String score;
 	
 	private int home_score;
 
 	private int visitor_score;
 	
-	public Match() {}
+	public Match(Long id) {
+		this.id=id;
+	}
 
 	
 	public Long getId() {
@@ -80,13 +81,13 @@ public class Match {
 	}
 
 
-	public boolean isTerminata() {
-		return terminata;
+	public String getScore() {
+		return score;
 	}
 
 
-	public void setTerminata(boolean terminata) {
-		this.terminata = terminata;
+	public void setScore(String score) {
+		this.score = score;
 	}
 	
 		
