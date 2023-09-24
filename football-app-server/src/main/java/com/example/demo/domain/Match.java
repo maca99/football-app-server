@@ -14,14 +14,17 @@ public class Match {
 	
 	private Date date_match;
 	
-	private String score;
-	
 	private int home_score;
 
 	private int visitor_score;
 	
-	public Match(Long id) {
+	public Match(Long id,Date date,Team home,Team visitor,int s1,int s2) {
 		this.id=id;
+		this.setDate(date);
+		this.setHome(home);
+		this.setVisitor(visitor);
+		this.home_score=s1;
+		this.visitor_score=s2;
 	}
 
 	
@@ -74,21 +77,11 @@ public class Match {
 	public int getVisitor_score() {
 		return visitor_score;
 	}
-
-
+	
 	public void setVisitor_score() {
 		this.visitor_score++;
 	}
 
-
-	public String getScore() {
-		return score;
-	}
-
-
-	public void setScore(String score) {
-		this.score = score;
-	}
 	
 		
 	

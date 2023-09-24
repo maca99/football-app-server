@@ -26,7 +26,7 @@ public class NewsServiceImpl implements NewsService {
 		news = new HashMap<String,News>();
 		
 		
-		try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("static/Player.txt");
+		try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("static/News.txt");
 			     BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
 		    String line;
 		    while ((line = br.readLine()) != null) {
@@ -34,7 +34,7 @@ public class NewsServiceImpl implements NewsService {
 		        String[] tokens = line.split(",");
 		        String titolo = tokens[0];
 		        String testo = tokens[1];
-		        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		        Date date = dateFormat.parse(tokens[2]);
 		        
 		        news.put(titolo, new News(titolo,testo,date));

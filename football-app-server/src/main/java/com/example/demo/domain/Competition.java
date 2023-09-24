@@ -12,8 +12,7 @@ public class Competition {
 	private String details;
 	
 	private String logo;
-	
-	private List<Daymatch> daymatches;
+
 	
 	private List<Team> teams;
 	
@@ -48,17 +47,6 @@ public class Competition {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-
-
-	public List<Daymatch> getDaymatches() {
-		return daymatches;
-	}
-
-	//Dato una lista la itero creando la serie delle giornate
-	public void setDaymatches() {
-		
-	}
-
 
 	public List<Team> getTeams() {
 		return teams;
