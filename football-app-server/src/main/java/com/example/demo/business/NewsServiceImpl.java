@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -59,6 +60,13 @@ public class NewsServiceImpl implements NewsService {
 	public List<News> findAll() {
 		List<News> list = new ArrayList<News>(news.values());
 		return list;
+	}
+
+	@Override
+	public List<News> getRecently() {
+		List<News> recently = new ArrayList<News>(news.values());
+		Collections.sort(recently);
+		return recently;
 	}
 
 }

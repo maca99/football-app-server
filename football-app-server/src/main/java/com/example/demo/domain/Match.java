@@ -4,7 +4,7 @@ import java.util.Date;
 
 
 
-public class Match {
+public class Match{
 	
 	private Long id;
 
@@ -81,8 +81,6 @@ public class Match {
 	public void setVisitor_score() {
 		this.visitor_score++;
 	}
-
-	
-		
+			
 	
 }

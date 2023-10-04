@@ -4,26 +4,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.domain.Competition;
 import com.example.demo.domain.Team;
-import com.example.demo.service.CompetitionService;
 import com.example.demo.service.TeamService;
 
 @Service
 public class TeamServiceImpl implements TeamService {
 	
+	private Map<Long,Team> teams;
 	
-	private Map<Long,Team> teams ;
 	
-	private CompetitionService comp;
-	
-	public TeamServiceImpl(CompetitionService comp) {
-		this.comp=comp;
+	public TeamServiceImpl() {
+		
 		teams = new HashMap<Long,Team>();
 
 		try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("static/Team.txt");
@@ -35,9 +32,8 @@ public class TeamServiceImpl implements TeamService {
 		        Long id = Long.parseLong(tokens[0]);
 		        String name = tokens[1];
 		        String descrizione = tokens[2];
-		        Competition  c = comp.findById(Long.parseLong(tokens[3]));
 		        
-		        teams.put(id,new Team(id,name,descrizione,c));
+		        teams.put(id,new Team(id,name,descrizione));
 		    }
 		} catch (IOException e) {
 		    e.printStackTrace();
@@ -56,5 +52,12 @@ public class TeamServiceImpl implements TeamService {
 		}
 		return null;
 	}
+
+	@Override
+	public Collection<Team> getAllTeam() {
+		return teams.values();
+	}
+	
+
 
 }

@@ -40,6 +40,11 @@ public class PlayerServiceImpl implements PlayerService {
 		    e.printStackTrace();
 		}
 	}
+
+	@Override
+	public Player getPlayerByID(Long id) {
+		return players.get(id);
+	}
 	
 	
 }

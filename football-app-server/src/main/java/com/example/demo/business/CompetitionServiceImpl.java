@@ -13,11 +13,10 @@ import org.springframework.stereotype.Service;
 import com.example.demo.domain.Competition;
 import com.example.demo.service.CompetitionService;
 
-
 @Service
 public class CompetitionServiceImpl implements CompetitionService {
 	
-	Map<Long,Competition> competitions;
+	private Map<Long,Competition> competitions;
 	
 	public CompetitionServiceImpl() {
 		
@@ -30,9 +29,9 @@ public class CompetitionServiceImpl implements CompetitionService {
 		        // Processa la riga e crea un'istanza di Competition
 		        String[] tokens = line.split(",");
 		        Long id = Long.parseLong(tokens[0]);
-		        String nome = tokens[1];
+		        String nome = tokens[1].replaceAll("\"", "");
 		        String descrizione = tokens[2];
-		        String logo = tokens[3];
+		        String logo = tokens[3].replaceAll("\"", "");
 		        //inserisco dentro la lista
 		        competitions.put(id,new Competition(id,nome,descrizione,logo));
 		        
@@ -52,5 +51,6 @@ public class CompetitionServiceImpl implements CompetitionService {
 	public Competition findById(Long id) {
 		return competitions.get(id);
 	}
+	
 
 }

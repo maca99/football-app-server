@@ -1,51 +1,40 @@
-1,"Manchester United",,2
-2,"Real Madrid",,3
-3,"FC Barcelona",,3
-4,"FC Bayern Monaco",,4
-5,"AC Milan",,1
-6,"Paris Saint-Germain",,5
-7,"Liverpool FC",,2
-8,"Juventus FC",,1
-9,"Borussia Dortmund",,4
-10,"Chelsea FC",,2
-11,"FC Porto",,6
-12,"Arsenal FC",,2
-13,"Inter Milan",,1
-14,"Atletico Madrid",,3
-15,"Manchester City",,2
-16,"Tottenham Hotspur",,2
-17,"Schalke 04",,4
-18,"Lazio",,1
-19,"VfL Wolfsburg",,4
-20,"West Ham United",,2
-21,"Roma",,1
-22,"Valencia CF",,3
-23,"Everton FC",,2
-24,"Fiorentina",,1
-25,"Villarreal CF",,3
-26,"Napoli",,1
-27,"Leeds United",,2
-28,"Borussia Mönchengladbach",,4
-29,"Sevilla FC",,3
-30,"Aston Villa",,2
-31,"Juventus",,1
-32,"Empoli FC",,1
-33,"ACF Fiorentina",,1
-34,"Udinese Calcio",,1
-35,"AS Roma",,1
-36,"Atalanta",,1
-37,"Salernitana Calcio 1919",,1
-38,"Inter",,1
-39,"Genoa CFC",,1
-40,"Torino FC",,1
-41,"Sassuolo Calcio",,1
-42,"Lazio Roma",,1
-43,"Spezia Calcio",,1
-44,"Cagliari Calcio",,1
-45,"Hellas Verona",,1
-46,"Sampdoria",,1
-47,"Juventus",,1
-48,"Lazio Roma",,1
-49,"AS Roma",,1
-50,"Empoli FC",,1
-51,"AC Venezia",,1
+1,Manchester United,Club di calcio britannico con una lunga storia di successo in Premier League ed Europa.
+2,Real Madrid,Il club di calcio più titolato al mondo, famoso per le vittorie in Liga e Champions League.
+3,FC Barcelona,Altro club di fama mondiale noto per il gioco di passaggio e uno stile attraente.
+4,FC Bayern Monaco,Club di calcio dominante in Germania con molti titoli di Bundesliga e Champions League.
+5,AC Milan,Club storico d'Italia con successi in Serie A e Coppa dei Campioni/Champions League.
+7,Liverpool FC,Squadra inglese leggendaria con una grande base di tifosi e successi in Inghilterra ed Europa.
+8,Juventus FC,Il club italiano più vincente in Serie A con ambizioni europee.
+9,Borussia Dortmund,Squadra tedesca con tifosi appassionati e tradizione nello sviluppo dei giovani talenti.
+10,Chelsea FC,Club inglese in crescita in Europa e Premier League.
+12,Arsenal FC,Squadra inglese con stile di gioco accattivante e successi in Premier League.
+13,Inter Milan,Club italiano con successi in Italia ed Europa, noto per i colori nerazzurri.
+14,Atletico Madrid,Squadra spagnola con difesa solida e presenza nella Liga.
+15,Manchester City,Club inglese in ascesa in Premier League.
+16,Tottenham Hotspur,Squadra inglese con tifosi fedeli e storia in Premier League.
+17,Schalke 04,Club tedesco con lunga storia e tifosi appassionati.
+18,Lazio,Club italiano con successi in Serie A.
+19,VfL Wolfsburg,Club tedesco noto per la sua crescita relativa nel calcio di alto livello.
+20,West Ham United,Squadra inglese con storia in Premier League.
+21,Roma,Altro club italiano con tifosi appassionati e storia di successo.
+22,Valencia CF,Squadra spagnola con tradizione di gioco attraente.
+23,Everton FC,Squadra inglese con presenza storica in Premier League.
+24,Fiorentina,Club italiano noto per i colori viola e la storia in Serie A.
+25,Villarreal CF,Squadra spagnola con presenza in La Liga.
+26,Napoli,Club italiano con tifosi appassionati e storia di successo.
+27,Leeds United,Squadra inglese con storia di successo in Premier League.
+28,Borussia Mönchengladbach,Club tedesco con tradizione di gioco attraente.
+29,Sevilla FC,Squadra spagnola con successi in Liga ed Europa.
+30,Aston Villa,Squadra inglese con storia in Premier League.
+32,Empoli FC,Club italiano con presenza in Serie A.
+34,Udinese Calcio,Club italiano con storia in Serie A.
+36,Atalanta,Club italiano noto per il gioco offensivo.
+37,Salernitana Calcio 1919,Club italiano con storia nel calcio italiano.
+39,Genoa CFC,Club italiano con storia in Serie A.
+40,Torino FC,Club italiano con storia in Serie A.
+41,Sassuolo Calcio,Club italiano in crescita nel calcio di alto livello.
+43,Spezia Calcio,Club italiano con presenza in Serie A.
+44,Cagliari Calcio,Club italiano noto per i tifosi appassionati.
+45,Hellas Verona,Club italiano con storia in Serie A.
+46,Sampdoria,Club italiano con storia in Serie A.
+51,AC Venezia,Club italiano con presenza in Serie A.

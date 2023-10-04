@@ -11,4 +11,6 @@ public interface NewsService {
 	public News findByTitle(String titolo);
 	
 	public List<News> findAll();
+	
+	public List<News> getRecently();
 }

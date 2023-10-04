@@ -1,6 +1,5 @@
 package com.example.demo.domain;
 
-import java.util.List;
 
 public class Competition {
 	
@@ -14,10 +13,9 @@ public class Competition {
 	private String logo;
 
 	
-	private List<Team> teams;
-	
 
 	public Competition(Long id,String name,String details,String logo) {
+		this.setId(id);
 		this.setName(name);
 		this.setDetails(details);
 		this.setLogo(logo);
@@ -47,16 +45,6 @@ public class Competition {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-
-	public List<Team> getTeams() {
-		return teams;
-	}
-
-
-	public void setTeams(List<Team> teams) {
-		this.teams = teams;
-	}
-
 
 	public Long getId() {
 		return id;

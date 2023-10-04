@@ -9,5 +9,7 @@ public interface MatchService {
 
 	public Match findById(Long id);
 	
+	//Ultime partite di una squadra
 	public Collection<Match> getLastmatchByTeam(Team team); 
+	
 }
