@@ -44,13 +44,12 @@ public class DaymatchServiceImpl implements DaymatchService {
 		        Boolean last = Boolean.parseBoolean(tokens[2]);
 		        Competition competition = competitions.findById(Long.parseLong(tokens[3]));
 		        List<Match> matches = new ArrayList<Match>();
-		        if (tokens.length >= 6) { // Verifica che ci siano almeno 4 elementi in tokens
-	                for (int i = 3; i < tokens.length; i++) { // Inizia da 3
+		        if (tokens.length >= 5) {
+	                for (int i = 4; i < tokens.length; i++) {
 	                    matches.add(matchs.findById(Long.parseLong(tokens[i])));
 	                }
 	            }
 		       
-		        
 		        days.put(id, new Daymatch(id,last,num,competition,matches));
 		    }
 		} catch (IOException e) {
@@ -62,11 +61,12 @@ public class DaymatchServiceImpl implements DaymatchService {
 	public List<Daymatch> getByCompetition(Long id) {
 		List<Daymatch> all = new ArrayList<Daymatch>();
 		for(Daymatch m: days.values()) {
-			if(m.getCompetition().getId()==id) {
+			Competition c = m.getCompetition();
+			if(c.getId()==id) {
 				all.add(m);
 			}
 		}
-		Collections.sort(all);
+		//Collections.sort(all);
 		return all;
 	}
 

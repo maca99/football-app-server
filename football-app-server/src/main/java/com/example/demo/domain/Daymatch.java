@@ -20,7 +20,7 @@ public class Daymatch implements Comparable<Daymatch>{
 	
 	private short num;
 	
-	private boolean last;
+	private boolean played;
 	
 	private Competition competition;
 	
@@ -49,10 +49,10 @@ public class Daymatch implements Comparable<Daymatch>{
 		this.competition = competition;
 	}
 	public boolean isLast() {
-		return last;
+		return played;
 	}
 	public void setLast(boolean last) {
-		this.last = last;
+		this.played = last;
 	}
 	public short getNum() {
 		return num;
