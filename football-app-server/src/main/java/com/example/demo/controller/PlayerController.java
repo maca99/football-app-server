@@ -1,5 +1,12 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,5 +29,26 @@ public class PlayerController {
 	@GetMapping("/player/{id}")
 	public Player getPlayerByID(@PathVariable Long id) {
 		return service.getPlayerByID(id);
+	}
+	
+	@GetMapping("/competition/{id}/topscorers")
+	public List<Map<String,Object>> getTopScorersByCompetition(@PathVariable Long id){
+		Random random = new Random();
+		List<Map<String, Object>> result=new ArrayList<Map<String,Object>>();
+		List<Player>players = service.getPlayerByCompetition(id);
+		for(Player p : players) {
+			Map<String,Object> map = new HashMap<>();
+			map.put("player", p);
+			map.put("goals", random.nextInt(33));
+			result.add(map);
+		}
+		
+		 Collections.sort(result, (mapA, mapB) -> {
+	            Integer pointsA = (Integer) mapA.get("goals");
+	            Integer pointsB = (Integer) mapB.get("goals");
+	            return pointsB.compareTo(pointsA);
+	        });
+		
+		return result;
 	}
 }

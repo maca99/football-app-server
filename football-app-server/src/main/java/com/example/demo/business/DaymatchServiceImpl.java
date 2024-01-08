@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Competition;
 import com.example.demo.domain.Daymatch;
@@ -20,7 +19,7 @@ import com.example.demo.service.CompetitionService;
 import com.example.demo.service.DaymatchService;
 import com.example.demo.service.MatchService;
 
-@Service
+
 public class DaymatchServiceImpl implements DaymatchService {
 	
 	private Map<Long,Daymatch> days;

@@ -8,12 +8,12 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
+
 
 import com.example.demo.domain.Team;
 import com.example.demo.service.TeamService;
 
-@Service
+
 public class TeamServiceImpl implements TeamService {
 	
 	private Map<Long,Team> teams;
@@ -32,8 +32,9 @@ public class TeamServiceImpl implements TeamService {
 		        Long id = Long.parseLong(tokens[0]);
 		        String name = tokens[1];
 		        String descrizione = tokens[2];
+		        String image = tokens[3];
 		        
-		        teams.put(id,new Team(id,name,descrizione));
+		        teams.put(id,new Team(id,name,descrizione,image));
 		    }
 		} catch (IOException e) {
 		    e.printStackTrace();

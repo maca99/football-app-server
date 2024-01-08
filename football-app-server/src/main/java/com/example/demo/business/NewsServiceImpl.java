@@ -13,12 +13,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.News;
 import com.example.demo.service.NewsService;
 
-@Service
+
 public class NewsServiceImpl implements NewsService {
 	
 	private Map<String,News> news;

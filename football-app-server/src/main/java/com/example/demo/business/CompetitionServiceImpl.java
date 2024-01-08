@@ -8,12 +8,10 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Competition;
 import com.example.demo.service.CompetitionService;
 
-@Service
 public class CompetitionServiceImpl implements CompetitionService {
 	
 	private Map<Long,Competition> competitions;

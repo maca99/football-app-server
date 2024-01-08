@@ -5,16 +5,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
+
 
 import com.example.demo.domain.Player;
 import com.example.demo.domain.Team;
 import com.example.demo.service.PlayerService;
 import com.example.demo.service.TeamService;
 
-@Service
+
 public class PlayerServiceImpl implements PlayerService {
 	
 	private Map<Long,Player> players;
@@ -44,6 +45,12 @@ public class PlayerServiceImpl implements PlayerService {
 	@Override
 	public Player getPlayerByID(Long id) {
 		return players.get(id);
+	}
+
+	@Override
+	public List<Player> getPlayerByCompetition(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
