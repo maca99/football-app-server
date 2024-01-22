@@ -8,14 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Player;
 import com.example.demo.domain.Team;
 import com.example.demo.service.PlayerService;
 import com.example.demo.service.TeamService;
 
-
+@Service
 public class PlayerServiceImpl implements PlayerService {
 	
 	private Map<Long,Player> players;

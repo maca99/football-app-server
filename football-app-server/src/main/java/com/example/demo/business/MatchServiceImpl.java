@@ -12,12 +12,13 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Match;
 import com.example.demo.domain.Team;
 import com.example.demo.service.TeamService;
 
-
+@Service
 public class MatchServiceImpl implements com.example.demo.service.MatchService {
 	
 	private Map<Long,Match> matches;
