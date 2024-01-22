@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,9 +50,8 @@ public class PlayerServiceImpl implements PlayerService {
 
 	@Override
 	public List<Player> getPlayerByCompetition(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Player> result = new ArrayList<Player>(players.values());
+		return result;
 	}
-	
 	
 }

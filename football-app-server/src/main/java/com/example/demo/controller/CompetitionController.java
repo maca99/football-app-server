@@ -65,7 +65,7 @@ public class CompetitionController {
 		Team t = teamservice.findById(idt);
 		if(teamCservice.getAllCompetitionByTeam(t).contains(comp)) {
 			for(Daymatch d : dayservice.getByCompetition(idc)) {
-				for(Match m : d.getMatchs()) {
+				for(Match m : d.getMatches()) {
 					if(m.getHome().equals(t)||m.getVisitor().equals(t)) {
 						result.add(m);
 					}

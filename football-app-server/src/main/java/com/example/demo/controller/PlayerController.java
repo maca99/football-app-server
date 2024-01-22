@@ -41,6 +41,7 @@ public class PlayerController {
 			map.put("player", p);
 			map.put("goals", random.nextInt(33));
 			result.add(map);
+			if(result.size() > 10)break;
 		}
 		
 		 Collections.sort(result, (mapA, mapB) -> {

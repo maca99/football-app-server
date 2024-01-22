@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +22,9 @@ private final MatchServiceImpl service;
 	@GetMapping("/match/{id}")
 	Match findMatch(@PathVariable Long id) {
 		return service.findById(id);
+	}
+	List<Match> getMatchOfDay(){
+		return null;
 	}
 	
 }

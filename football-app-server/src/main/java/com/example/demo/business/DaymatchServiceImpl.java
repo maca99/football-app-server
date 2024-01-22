@@ -40,17 +40,15 @@ public class DaymatchServiceImpl implements DaymatchService {
 		        // Processa la riga e crea un'istanza di Competition
 		        String[] tokens = line.split(",");
 		        Long id = Long.parseLong(tokens[0]);
-		        short num = Short.parseShort(tokens[1]);
-		        Boolean last = Boolean.parseBoolean(tokens[2]);
-		        Competition competition = competitions.findById(Long.parseLong(tokens[3]));
+		        Competition competition = competitions.findById(Long.parseLong(tokens[1]));
 		        List<Match> matches = new ArrayList<Match>();
-		        if (tokens.length >= 5) {
-	                for (int i = 4; i < tokens.length; i++) {
+		        if (tokens.length >= 3) {
+	                for (int i = 3 ; i < tokens.length; i++) {
 	                    matches.add(matchs.findById(Long.parseLong(tokens[i])));
 	                }
 	            }
 		       
-		        days.put(id, new Daymatch(id,last,num,competition,matches));
+		        days.put(id, new Daymatch(id,competition,matches));
 		    }
 		} catch (IOException e) {
 		    e.printStackTrace();
@@ -61,12 +59,9 @@ public class DaymatchServiceImpl implements DaymatchService {
 	public List<Daymatch> getByCompetition(Long id) {
 		List<Daymatch> all = new ArrayList<Daymatch>();
 		for(Daymatch m: days.values()) {
-			Competition c = m.getCompetition();
-			if(c.getId()==id) {
+			if(id.equals(m.getCompetition().getId()))
 				all.add(m);
-			}
 		}
-		//Collections.sort(all);
 		return all;
 	}
 
@@ -75,7 +70,7 @@ public class DaymatchServiceImpl implements DaymatchService {
 		Long id = team.getId();
 		List<Match> result = new ArrayList<Match>();
 		for(Daymatch day  : this.getByCompetition(id)) {
-			for(Match m : day.getMatchs()) {
+			for(Match m : day.getMatches()) {
 				if(m.getHome().equals(team)) result.add(m);
 				if(m.getVisitor().equals(team)) result.add(m);	
 			}
@@ -85,23 +80,12 @@ public class DaymatchServiceImpl implements DaymatchService {
 
 	@Override
 	public List<Daymatch> getPlayedDayMatchByCompetition(Competition comp) {
-		List<Daymatch> all = new ArrayList<Daymatch>();
-		Short num = this.getLastDayMatchByCompetition(comp).getNum();
-		for(Daymatch m: this.getByCompetition(comp.getId())) {
-			if(num == null) return this.getByCompetition(comp.getId());
-			for(int i=0;i<=num;i++) {
-				all.add(m);
-			}
-		}
-		Collections.sort(all);
-		return all;
+		return null;
+		//todo
 	}
 
 	@Override
 	public Daymatch getLastDayMatchByCompetition(Competition comp) {
-		for(Daymatch d : this.getByCompetition(comp.getId())) {
-			if(d.isLast())return d;
-		}
 		return null;
 	}
 
