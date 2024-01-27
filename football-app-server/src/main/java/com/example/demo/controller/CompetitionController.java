@@ -79,7 +79,7 @@ public class CompetitionController {
 	@GetMapping("/competition/{id}/ranking")
 	@ResponseBody
 	public List<Map<String,Object>> getRankingByCompetition(@PathVariable Long id){
-		Competition comp = service.findById(id);
+		Competition comp = service.findById(1L);
 		List<Map<String, Object>> result = new ArrayList<>();
 		
 		Random random = new Random();
@@ -113,6 +113,9 @@ public class CompetitionController {
 		return result;
 
 	}
+	
+	
+	
 	
 	
 	

@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -35,8 +36,15 @@ public class TeamController {
 	@CrossOrigin(origins = "http://localhost:8100")
 	@GetMapping("competition/{id}/teams")
 	List<Team> getTeam(@PathVariable Long id){
-		Competition comp = compservice.findById(id);
+		Competition comp = compservice.findById(1L);
 		return compINservice.getAllTeamByCompetition(comp);
+	}
+	
+	@CrossOrigin(origins = "http://localhost:8100")
+	@GetMapping("teams")
+	public List<Team> getAllTeams(){
+		List<Team> result = new ArrayList<Team>(service.getAllTeam());
+		return result;
 	}
 
 }
