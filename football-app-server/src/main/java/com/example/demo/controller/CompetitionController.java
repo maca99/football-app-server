@@ -115,8 +115,4 @@ public class CompetitionController {
 	}
 	
 	
-	
-	
-	
-	
 }

@@ -27,10 +27,11 @@ public class TeamController {
 		this.compINservice=compINservice;
 		this.compservice=compservice;
 	}
-	
-	@GetMapping("team/id")
+	@CrossOrigin(origins = "http://localhost:8100")
+	@GetMapping("team/{id}")
 	public Team getTeamById(@PathVariable long id) {
-		return service.findById(id);
+		Team result = service.findById(id);
+		return result;
 	}
 	
 	@CrossOrigin(origins = "http://localhost:8100")

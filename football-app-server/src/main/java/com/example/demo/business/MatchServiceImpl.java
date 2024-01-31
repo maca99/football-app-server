@@ -6,10 +6,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
@@ -24,6 +26,8 @@ public class MatchServiceImpl implements com.example.demo.service.MatchService {
 	private Map<Long,Match> matches;
 	
 	private TeamService teamS;
+
+	private LocalDate dataAttuale;
 
 	public MatchServiceImpl(TeamServiceImpl t) {
 		
@@ -66,5 +70,20 @@ public class MatchServiceImpl implements com.example.demo.service.MatchService {
 		}
 		return last;
 	}
+
+	@Override
+	public Collection<Match> getTodayMatches() {
+		List<Match>result = new ArrayList<Match>();
+
+		Date date = java.sql.Date.valueOf(LocalDate.now());
+		for(Match m : matches.values()) {
+			if(m.getDate().equals(date)) {
+				result.add(m);
+			}
+		}
+		return result;
+	}
+	
+	
 
 }

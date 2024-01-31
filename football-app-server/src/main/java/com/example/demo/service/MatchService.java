@@ -12,4 +12,6 @@ public interface MatchService {
 	//Ultime partite di una squadra
 	public Collection<Match> getLastmatchByTeam(Team team); 
 	
+	public Collection<Match> getTodayMatches();
+	
 }

@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +25,10 @@ private final MatchServiceImpl service;
 	Match findMatch(@PathVariable Long id) {
 		return service.findById(id);
 	}
-	List<Match> getMatchOfDay(){
-		return null;
+	@GetMapping("/match/today")
+	public Map<String,List<Match>> getTodayMatches(){
+		Map<String,List<Match>> result = new HashMap<String,List<Match>>();
+		
+		return result;
 	}
-	
 }
